@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0202D812-DCCA-3690-ADA4-B2B4968FE5A2}</ProjectGuid>
+    <RootNamespace>DDAS_Client</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.19041.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>DDAS_Client</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>DDAS_Client</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>MSVC2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>MSVC2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DDAS_Client</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DDAS_Client</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtWidgets;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtGui;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtCore;release;/include;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\DDAS_Client.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>res</InitFuncName>
+      <Compression>default</Compression>
+      <NoZstd>true</NoZstd>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtWidgets;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtGui;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\include\QtCore;debug;/include;..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\DDAS_Client.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>res</InitFuncName>
+      <Compression>default</Compression>
+      <NoZstd>true</NoZstd>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="login.h" />
+    <QtMoc Include="mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\MAKING\QT\6.5.3\MSVC2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="login.ui" />
+    <QtUic Include="mainwindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICONS_00\ICON_00.PNG" />
+    <None Include="ICONS_00\LOGO.PNG" />
+    <None Include="ICONS_00\LOGO_T.png" />
+    <None Include="ICONS_02\a-addmultiple1.png" />
+    <None Include="ICONS_02\a-addsingle.png" />
+    <None Include="ICONS_02\a-bangzhu-help1.png" />
+    <None Include="ICONS_02\a-bianji-edit1.png" />
+    <None Include="ICONS_02\a-guanbi2-close21.png" />
+    <None Include="ICONS_02\a-icon_fuzhi-copy-fill21.png" />
+    <None Include="ICONS_02\a-icon_fuzhi-copy1.png" />
+    <None Include="ICONS_02\a-icon_mima-password-fill11.png" />
+    <None Include="ICONS_02\a-icon_personal1.png" />
+    <None Include="ICONS_02\a-icon_wancheng-complete-fill1.png" />
+    <None Include="ICONS_02\a-tianjiapeijian-addaccessory.png" />
+    <None Include="ICONS_02\a-wancheng-complete1.png" />
+    <None Include="ICONS_02\a-xinxi-info1.png" />
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-1.png" />
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-anti-1.png" />
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-anti.png" />
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel.png" />
+    <None Include="ICONS_02\a-yichu-moveout.png" />
+    <None Include="ICONS_02\a-zhijiaojiantoushangyou-corner-up-right-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantoushangzuo-corner-up-left-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantouxiazuo-corner-down-left-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantouyoushang-corner-right-up-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantouyouxia-corner-right-down-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantouzuoshang-corner-left-up-fill.png" />
+    <None Include="ICONS_02\a-zhijiaojiantouzuoxia-corner-left-down-fill.png" />
+    <None Include="ICONS_01\angle-down-l.png" />
+    <None Include="ICONS_01\angle-up-l.png" />
+    <None Include="ICONS_02\angle-up-l.png" />
+    <None Include="ICONS_02\back-2.png" />
+    <None Include="ICONS_01\bar-chart-l.png" />
+    <None Include="ICONS_01\blackboard-l.png" />
+    <None Include="ICONS_01\board-l.png" />
+    <None Include="ICONS_01\bookmark-l.png" />
+    <None Include="ICONS_02\bookmark-l.png" />
+    <None Include="ICONS_01\box-l.png" />
+    <None Include="ICONS_01\briefcase-l.png" />
+    <None Include="ICONS_02\briefcase-l.png" />
+    <None Include="ICONS_01\camber.png" />
+    <None Include="ICONS_02\camber.png" />
+    <None Include="ICONS_01\chemistry-l.png" />
+    <None Include="ICONS_01\circle.png" />
+    <None Include="ICONS_01\code-branch.png" />
+    <None Include="ICONS_01\command-01.png" />
+    <None Include="ICONS_02\command-01.png" />
+    <None Include="ICONS_01\command-l.png" />
+    <None Include="ICONS_01\container-l.png" />
+    <None Include="ICONS_01\control-01.png" />
+    <None Include="ICONS_02\control-01.png" />
+    <None Include="ICONS_01\control-rank.png" />
+    <None Include="ICONS_02\correct.png" />
+    <None Include="ICONS_01\cup-l.png" />
+    <None Include="ICONS_01\czs-paper-plane-l.png" />
+    <None Include="ICONS_02\daochu-export-fill.png" />
+    <None Include="ICONS_02\daochu-export.png" />
+    <None Include="ICONS_02\date.png" />
+    <None Include="ICONS_02\deng-light.png" />
+    <None Include="ICONS_01\down.png" />
+    <None Include="ICONS_02\down.png" />
+    <None Include="ICONS_02\error.png" />
+    <None Include="ICONS_02\exit.png" />
+    <None Include="ICONS_02\fengefu-separator.png" />
+    <None Include="ICONS_01\fire-l.png" />
+    <None Include="ICONS_01\folder-l.png" />
+    <None Include="ICONS_01\forum-l.png" />
+    <None Include="ICONS_02\forward-2.png" />
+    <None Include="ICONS_01\gene.png" />
+    <None Include="ICONS_02\guanbi-close.png" />
+    <None Include="ICONS_02\houtui-back.png" />
+    <None Include="ICONS_02\icon-geren-personal-fill.png" />
+    <None Include="ICONS_02\icon_bitian-required.png" />
+    <None Include="ICONS_02\icon_duankai-unlink.png" />
+    <None Include="ICONS_02\icon_saoma-scan.png" />
+    <None Include="ICONS_02\icon_shanchu-delete-fill.png" />
+    <None Include="ICONS_01\image-l.png" />
+    <None Include="ICONS_01\image.png" />
+    <None Include="ICONS_02\jiantoushang-arrow-up-fill.png" />
+    <None Include="ICONS_02\jiantouxia-arrow-down-fill.png" />
+    <None Include="ICONS_02\jiantouyou-arrow-right-fill.png" />
+    <None Include="ICONS_02\jiantouyoushang-arrow-right-up-fill.png" />
+    <None Include="ICONS_02\jiantouyoushang-arrow-right-up.png" />
+    <None Include="ICONS_02\jiantouyouxia-arrow-right-down-fill.png" />
+    <None Include="ICONS_02\jiantouyouxia-arrow-right-down.png" />
+    <None Include="ICONS_02\jiantouzuo-arrow-left-fill.png" />
+    <None Include="ICONS_02\jiantouzuoshang-arrow-left-up-fill.png" />
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-down-fill.png" />
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-down.png" />
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-up.png" />
+    <None Include="ICONS_02\jinggao-fill.png" />
+    <None Include="ICONS_02\jinggao-warning.png" />
+    <None Include="ICONS_02\jinyong-disable.png" />
+    <None Include="ICONS_02\kapian-card.png" />
+    <None Include="ICONS_01\left.png" />
+    <None Include="ICONS_02\left.png" />
+    <None Include="ICONS_02\liebiao-list.png" />
+    <None Include="ICONS_02\liebiaoshezhi-list-setting.png" />
+    <None Include="ICONS_01\light-l.png" />
+    <None Include="ICONS_02\link.png" />
+    <None Include="ICONS_02\mima-password.png" />
+    <None Include="ICONS_02\minus.png" />
+    <None Include="ICONS_01\mobile-l.png" />
+    <None Include="ICONS_02\more.png" />
+    <None Include="ICONS_02\multiple.png" />
+    <None Include="ICONS_01\network-l.png" />
+    <None Include="ICONS_01\operation-l.png" />
+    <None Include="ICONS_01\option.png" />
+    <None Include="ICONS_02\option.png" />
+    <None Include="ICONS_02\paixu-sort.png" />
+    <None Include="ICONS_01\platform-l.png" />
+    <None Include="ICONS_02\plus.png" />
+    <None Include="ICONS_01\prototype-l.png" />
+    <None Include="ICONS_02\qianjin-forward.png" />
+    <None Include="ICONS_01\read-l.png" />
+    <None Include="ICONS_02\refresh.png" />
+    <QtRcc Include="res.qrc" />
+    <None Include="ICONS_01\right-clipboard-l.png" />
+    <None Include="ICONS_01\right.png" />
+    <None Include="ICONS_02\right.png" />
+    <None Include="ICONS_01\rollerbrush-l.png" />
+    <None Include="ICONS_01\server-l.png" />
+    <None Include="ICONS_02\shanchu-delete.png" />
+    <None Include="ICONS_02\shangchuan-upload-fill.png" />
+    <None Include="ICONS_02\shangchuan-upload.png" />
+    <None Include="ICONS_02\shezhi-setting.png" />
+    <None Include="ICONS_02\shoppong-cart.png" />
+    <None Include="ICONS_02\shouqi-fold.png" />
+    <None Include="ICONS_02\shouqixia-unfold-down-fill.png" />
+    <None Include="ICONS_02\shouqiyou-unfold-right-fill.png" />
+    <None Include="ICONS_02\shouqizuo-unfold-left-fill.png" />
+    <None Include="ICONS_02\shouye-home.png" />
+    <None Include="ICONS_02\single.png" />
+    <None Include="ICONS_01\site-folder-l.png" />
+    <None Include="ICONS_01\square.png" />
+    <None Include="ICONS_01\star-l.png" />
+    <None Include="ICONS_01\storage-l.png" />
+    <None Include="ICONS_01\talk-l.png" />
+    <None Include="ICONS_01\text-l.png" />
+    <None Include="ICONS_02\tihuan-change.png" />
+    <None Include="ICONS_01\triangle.png" />
+    <None Include="ICONS_01\trophy-l.png" />
+    <None Include="ICONS_01\up.png" />
+    <None Include="ICONS_02\up.png" />
+    <None Include="ICONS_01\user-l.png" />
+    <None Include="ICONS_01\warning-l.png" />
+    <None Include="ICONS_02\wenben-text-fill.png" />
+    <None Include="ICONS_02\wenben-text.png" />
+    <None Include="ICONS_01\wrench-l.png" />
+    <None Include="ICONS_01\write-l.png" />
+    <None Include="ICONS_02\xiazai-download-fill.png" />
+    <None Include="ICONS_02\xiazai-download.png" />
+    <None Include="ICONS_02\xinxi-info-fill.png" />
+    <None Include="ICONS_02\zhankai-fold-fill.png" />
+    <None Include="ICONS_02\zhankai-unfold.png" />
+    <None Include="ICONS_02\zhijiaojiantouxiayou-corner-down-right-fill.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

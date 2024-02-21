@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="login.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="login.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICONS_00\ICON_00.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_00\LOGO.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_00\LOGO_T.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-addmultiple1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-addsingle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-bangzhu-help1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-bianji-edit1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-guanbi2-close21.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-icon_fuzhi-copy-fill21.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-icon_fuzhi-copy1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-icon_mima-password-fill11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-icon_personal1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-icon_wancheng-complete-fill1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-tianjiapeijian-addaccessory.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-wancheng-complete1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-xinxi-info1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-anti-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel-anti.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-xuanzhuanmianban-rotatepanel.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-yichu-moveout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantoushangyou-corner-up-right-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantoushangzuo-corner-up-left-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantouxiazuo-corner-down-left-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantouyoushang-corner-right-up-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantouyouxia-corner-right-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantouzuoshang-corner-left-up-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\a-zhijiaojiantouzuoxia-corner-left-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\angle-down-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\angle-up-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\angle-up-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\back-2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\bar-chart-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\blackboard-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\board-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\bookmark-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\bookmark-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\box-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\briefcase-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\briefcase-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\camber.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\camber.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\chemistry-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\circle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\code-branch.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\command-01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\command-01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\command-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\container-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\control-01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\control-01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\control-rank.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\correct.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\cup-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\czs-paper-plane-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\daochu-export-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\daochu-export.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\date.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\deng-light.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\exit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\fengefu-separator.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\fire-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\folder-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\forum-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\forward-2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\gene.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\guanbi-close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\houtui-back.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\icon-geren-personal-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\icon_bitian-required.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\icon_duankai-unlink.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\icon_saoma-scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\icon_shanchu-delete-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\image-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\image.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantoushang-arrow-up-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouxia-arrow-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouyou-arrow-right-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouyoushang-arrow-right-up-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouyoushang-arrow-right-up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouyouxia-arrow-right-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouyouxia-arrow-right-down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouzuo-arrow-left-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouzuoshang-arrow-left-up-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jiantouzuoxia-arrow-left-up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jinggao-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jinggao-warning.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\jinyong-disable.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\kapian-card.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\liebiao-list.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\liebiaoshezhi-list-setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\light-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\link.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\mima-password.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\minus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\mobile-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\more.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\multiple.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\network-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\operation-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\option.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\option.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\paixu-sort.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\platform-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\prototype-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\qianjin-forward.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\read-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\refresh.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="res.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="ICONS_01\right-clipboard-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\rollerbrush-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\server-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shanchu-delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shangchuan-upload-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shangchuan-upload.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shezhi-setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shoppong-cart.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shouqi-fold.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shouqixia-unfold-down-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shouqiyou-unfold-right-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shouqizuo-unfold-left-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\shouye-home.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\single.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\site-folder-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\square.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\star-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\storage-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\talk-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\text-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\tihuan-change.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\triangle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\trophy-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\user-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\warning-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\wenben-text-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\wenben-text.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\wrench-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_01\write-l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\xiazai-download-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\xiazai-download.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\xinxi-info-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\zhankai-fold-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\zhankai-unfold.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ICONS_02\zhijiaojiantouxiayou-corner-down-right-fill.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
