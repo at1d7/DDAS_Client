@@ -18,6 +18,7 @@ public:
     ~MainWindow();
 
 private slots:
+
     void on_hideBtn_clicked();
 
     void on_FullBtn_clicked();
